@@ -8,7 +8,6 @@
 }
 
 body {
-  font-family: 'IBM Plex Mono';
   color: rgba(0, 0, 0, 0.85);
   /* disable text selection */
   user-select: none;
