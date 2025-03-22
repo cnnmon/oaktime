@@ -85,6 +85,7 @@ export default function Results({
           reset
         </Url>
       </div>
+      <br /><br />
     </div>
   )
 }
