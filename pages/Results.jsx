@@ -8,6 +8,14 @@ export default function Results({
 }) {
   let maxValue = undefined
   let bestPerson = undefined
+
+  if (!answers) {
+    return (
+      <div>
+        no
+      </div>
+    )
+  }
   
   const tallied = Object.entries(answers).reduce((acc, [key, value]) => {
     const { choices } = questions[key]
