@@ -63,7 +63,7 @@ export default function Results({
         <p>results:</p>
         {Object.entries(tallied).map(([person, value], index) => (
           <div key={index} className="flex justify-between items-center gap-2">
-            <p className="w-16">{person}</p>
+            <p className="w-[30%]">{person}</p>
             <div className="bg-gray-300 w-full h-3">
               <div
                 className="h-full bg-red-500"
@@ -72,7 +72,7 @@ export default function Results({
                 }}
               />
             </div>
-            <p className="w-24">({value} / {total})</p>
+            <p className="w-[40%]">({value} / {total})</p>
           </div>
         ))}
       </div>
