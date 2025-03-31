@@ -49,7 +49,7 @@ export default function Results({
   const total = Object.values(answers).length
   const { description, image } = results[bestPerson]
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-4">
       <Image
         width={200}
         height={200}

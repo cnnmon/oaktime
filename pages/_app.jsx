@@ -9,15 +9,15 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>oaktime</title>
       </Head>
-      <div className="container sm:transform sm:rotate-1 sm:p-4">
-        <AnimatePresence exitBeforeEnter 
+      <div className="sm:transform sm:rotate-1">
+        <AnimatePresence 
         mode="wait">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.3 }}
-            className="flex p-4 flex-col w-full justify-center gap-2 max-w-2xl"
+            className="container p-8 max-w-2xl"
           >
             <Image src="/images/title.png" alt="oaktime" width={500} height={500} />
             <Component {...pageProps} />

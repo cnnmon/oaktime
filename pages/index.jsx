@@ -126,7 +126,7 @@ function Home() {
             animate={{ opacity: 1, y: -10 }}
             exit={{ opacity: 0, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed p-2 bottom-10 sm:bottom-0 right-0 pointer-events-none flex gap-2"
+            className="fixed p-2 bottom-0 right-0 pointer-events-none flex gap-2"
           >
             {emotes.map((emote, i) => (
               <Image
