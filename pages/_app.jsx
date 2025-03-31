@@ -5,11 +5,11 @@ import Image from 'next/image'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="h-screen w-screen flex justify-center items-center mt-[-20px]">
+    <div className="h-screen w-screen flex justify-center items-center sm:bg-black">
       <Head>
         <title>oaktime</title>
       </Head>
-      <div className="container">
+      <div className="container sm:transform sm:rotate-1 sm:p-4">
         <AnimatePresence exitBeforeEnter 
         mode="wait">
           <motion.div
@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
           </motion.div>
         </AnimatePresence>
       </div>
-      <footer className="fixed bottom-0 text-center text-sm p-4 w-full">
+      <footer className="fixed bottom-0 text-center text-sm p-4 w-full sm:text-white">
         <p>•───────• <a className="link" href="https://github.com/cnnmon"><b>˙ᵕ˙</b></a> •───────•</p>
       </footer>
     </div>

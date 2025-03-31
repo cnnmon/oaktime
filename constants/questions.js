@@ -113,7 +113,7 @@ export const questions = [
   {
     title: "programming language",
     choices: [
-      ["typescript", "helen", "eric"],
+      ["typescript", ["helen", "eric"]],
       ["english", ["leyton", "tiffany"]],
     ]
   },
