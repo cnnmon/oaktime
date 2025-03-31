@@ -17,7 +17,7 @@
 
 body {
   color: rgba(0, 0, 0, 0.85);
-  background-color: black;
+  background-color: #f5f5f5;
   /* disable text selection */
   user-select: none;
   -webkit-user-select: none;
@@ -40,4 +40,5 @@ body {
   max-width: 600px;
   width: 100%;
   min-height: 600px;
+  overflow-y: auto;
 }

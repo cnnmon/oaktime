@@ -8,7 +8,7 @@ export default function Question({
     <div className="flex flex-col">
       <p>
         <b>{title}</b>
-      </p>
+      </p> 
       <div className="ml-2 mt-2">
         {choices.map((choice, index) => (
           <div key={index} className="flex items-center gap-2">
