@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.3 }}
-            className="container p-8 max-w-2xl"
+            className="container p-8 w-full sm:max-w-lg"
           >
             <Image src="/images/title.png" alt="oaktime" width={500} height={500} />
             <Component {...pageProps} />
