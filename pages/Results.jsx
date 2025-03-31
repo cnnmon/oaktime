@@ -76,7 +76,7 @@ export default function Results({
           </div>
         ))}
       </div>
-      <div className="flex fixed gap-2 justify-center bottom-0 right-0 p-4 opacity-50 w-full">
+      <div className="flex sm:fixed gap-2 justify-center bottom-0 right-0 p-4 opacity-50 w-full">
         <p>not satisfied?</p>
         <Url onClick={() => {
           localStorage.clear()

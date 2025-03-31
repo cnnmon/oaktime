@@ -119,15 +119,14 @@ function Home() {
       />
       <AnimatePresence
         mode="wait"
-        className="fixed p-2 bottom-0 right-0 pointer-events-none"
       >
         {emotes && (
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 0 }}
+            animate={{ opacity: 1, y: -10 }}
+            exit={{ opacity: 0, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="flex gap-2"
+            className="fixed p-2 bottom-10 sm:bottom-0 right-0 pointer-events-none flex gap-2"
           >
             {emotes.map((emote, i) => (
               <Image
