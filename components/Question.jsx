@@ -9,20 +9,22 @@ export default function Question({
       <p>
         <b>{title}</b>
       </p>
-      {choices.map((choice, index) => (
-        <div key={index} className="flex items-center gap-2">
-          <div
-            className={`${
-              index === existingChoiceIndex
-                ? `bg-zinc-500 text-white`
-                : undefined
-            } hover:bg-black hover:text-white cursor-pointer flex-1`}
-            onClick={() => handleAnswer(index)}
-          >
-            {index + 1}. {choice[0]}
+      <div className="ml-2 mt-2">
+        {choices.map((choice, index) => (
+          <div key={index} className="flex items-center gap-2">
+            <div
+              className={`${
+                index === existingChoiceIndex
+                  ? `bg-zinc-500 text-white`
+                  : undefined
+              } hover:bg-black hover:text-white cursor-pointer flex-1`}
+              onClick={() => handleAnswer(index)}
+            >
+              {index + 1}. {choice[0]}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

@@ -51,8 +51,8 @@ export default function Results({
   return (
     <div className="flex flex-col gap-2">
       <Image
-        width={300}
-        height={300}
+        width={200}
+        height={200}
         src={`/images/${image}`}
       />
       <div>
@@ -66,7 +66,7 @@ export default function Results({
             <p className="w-[30%]">{person}</p>
             <div className="bg-gray-300 w-full h-3">
               <div
-                className="h-full bg-red-500"
+                className="h-full bg-zinc-500"
                 style={{
                   width: `${(value / total) * 100}%`,
                 }}

@@ -1,6 +1,6 @@
 function Url({ disabled, onClick, children }) {
   return (
-    <p className="link">
+    <p className={disabled ? "pointer-events-none opacity-50" : "link"}>
       <a
         onClick={!disabled ? onClick : undefined}
         className={

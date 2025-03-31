@@ -98,18 +98,18 @@ function Home() {
 
   return (
     <div className="flex flex-col gap-2">
-      <p>
-        question {index + 1} of {randomizedQuestions.length}
-      </p>
       <div className="flex text-sm gap-2 opacity-75">
         <Url disabled={index <= 0} onClick={handleGoBack}>
-          {"<"} back
+          {"<"}
         </Url>
+        <p>
+          question {index + 1} of {randomizedQuestions.length}
+        </p>
         <Url
           disabled={existingChoiceIndex === undefined}
           onClick={handleGoNext}
         >
-          next {">"}
+          {">"}
         </Url>
       </div>
       <Question

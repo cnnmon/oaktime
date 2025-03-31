@@ -1,29 +1,34 @@
 import '../styles/globals.css'
 import Head from 'next/head'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="mx-auto mt-[6vh] flex justify-center">
+    <div className="h-screen w-screen flex justify-center items-center">
       <Head>
         <title>oaktime</title>
       </Head>
-      <AnimatePresence exitBeforeEnter 
-      mode="wait">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.3 }}
-          className="flex p-4 flex-col w-full justify-center gap-2 max-w-2xl"
-        >
-          <p className="text-3xl">which oaktime are you?</p>
-          <Component {...pageProps} />
-        </motion.div>
-      </AnimatePresence>
-      <footer className="fixed bottom-0 w-full text-center text-sm p-4 justify-center">
-        <p>•───────• <a className="link" href="https://github.com/cnnmon"><b>˙ᵕ˙</b></a> •───────•</p>
-      </footer>
+      <div className="container sm:transform sm:rotate-1">
+        <div className="h-[600px] p-4">
+          <AnimatePresence exitBeforeEnter 
+          mode="wait">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.3 }}
+              className="flex p-4 flex-col w-full justify-center gap-2 max-w-2xl"
+            >
+              <Image src="/images/title.png" alt="oaktime" width={500} height={500} />
+              <Component {...pageProps} />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+        <footer className="text-center text-sm p-4">
+          <p>•───────• <a className="link" href="https://github.com/cnnmon"><b>˙ᵕ˙</b></a> •───────•</p>
+        </footer>
+      </div>
     </div>
   )
 }
